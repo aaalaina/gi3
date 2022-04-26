@@ -1,0 +1,135 @@
+
+
+/*Basic objectives:Each student is responsible for gaining proficiency with each of these tasks prior to
+engaging in class discussions, through the use of the learning resources below, additional research and
+through the working through exercises/ challenge portion in this document:
+● Continue building proficiency with key concepts
+○ Variables, Data Types, Type Coercion, Basic Operators and Operator Precedence
+● Understand the use of Logical Operators
+○ Boolean, If/Else, Ternary and Switch Statements
+● Become comfortable creating and working with Functions, Arrays and Objects
+● Differentiate between the terms: Objects, Properties and Methods
+● Demonstrate an understanding
+○ Logical Operators, Functions and Arrays
+● Understand the importance and use of the following in JavaScript
+○ Loops and Iteration Events, Execution Context, Hoisting, Scope and ‘this’
+● Practice by coding alongside of the assigned videos */
+
+
+
+//VERY EASY: Write a function named min that takes two arguments and returns their minimum.
+//needs work!!!
+// 4/20 still needs work but I'm getting closer to the right answer.
+// 4/22 done.....yet another prompt that I overthought!
+// function min(a,b) {
+//    return Math.min(a,b) 
+// }
+
+//  var x = Number(prompt("Type a number here."));
+//  var y = Number(prompt("Type a different one."));
+
+// let answer = min(x,y);
+// console.log(answer);
+
+//  if (x != y){
+    
+//      const ans = min(x,y)
+//      console.log(ans)
+ 
+//  }
+//  else if (x == y){
+//      console.log("These numbers are equal!")
+//  };
+
+// EASY: Create an array of students holding their last name, first name, and age with 3 students. To
+// validate, please log a greeting with the first name, last name and age of the 2nd student. The output
+// should look like "Hello, my name is John Doe and I'm 19 years old."
+//multidimensional array
+//  let easyA = [["Margiela", "Mugler", "McQueen"],["Alexander", "Martin", "Thierry"],[17, 21, 19]];
+
+//  console.log("My name is " + easyA[1][2] + " " + easyA[0][1] + " and I am " + easyA[2][0] + " years old." );
+
+// MEDIUM: Create a program that accepts a number (1-12) as input and logs to the console that number
+// and its corresponding month. For example: if the user enters the number 3, then it should return the
+// month “March.” Alert the user if they enter an invalid number (e.g. less than 1 or greater than 12).
+// complete
+
+
+//   function whatMonth(monthNum) {
+//     //date object
+//     const d = new Date();
+//     // date method
+//     d.setMonth(monthNum -1);
+//   //A minus one is here so that it won't print out the month ahead of the number entered.
+//     console.log(d.toLocaleString ('default',{ month: 'long' }));
+//   }; 
+
+// let userInput = prompt("Enter a number to receive a month.");
+// let x = parseInt(userInput);
+//   if (userInput >= 1 && userInput <= 12){
+//       whatMonth(x);
+//     // console.log(answer)
+//   }
+//   else {
+//       console.log("errorrrrrrrr")
+//   };
+  
+/*HARD: Given the information below for Tom and Jerry.
+● Tom - height:  9in mass: 8 g
+● Jerry - height: 10in mass: 45 g
+Compare the BMI (Body Mass Index) of Tom & Jerry using the formula below:
+BMI = mass / height ^2 = mass / (height * height)
+Store Tom & Jerry’s mass and height as variables. Calculate both their BMI’s. Create a Boolean
+variable containing information about whether Tom has a higher BMI than Jerry. Print a string to the
+console with the variable from step 3 ( e.g. Is Tom’s BMI higher than Jerry’s? false).*/
+
+//I used a click event for this so make sure you uncomment the html!
+
+
+// //bmi function
+// function oKur (h,m){
+//     const bmi = m / (h * h);
+//     return bmi;
+// }
+
+// //variables to pass as arguments in my function
+// const th = 9;
+// const tm = 8;
+// const jh = 10;
+// const jm = 45;
+
+// console.log(oKur(th,tm));
+// console.log(oKur(jh,jm));
+
+// let tom = oKur(th,tm);
+// let jerry = oKur (jh,jm);
+
+// let results = ('Tom: ' + tom + "\n" + "Jerry: " + jerry);
+
+// function trialOne() {
+//   var isEqual = false;
+//   // let e = console.log("That's not true." + isEqual);
+//   document.getElementById('ansDisplay').innerHTML= "That's not true. " + results + " " + isEqual;
+//   }
+//   function trialTwo() {
+//   var isEqual = true;
+//   // console.log("lol, you're right!" + isEqual);
+//   document.getElementById('ansDisplay').innerHTML= "Lol, you're right! " + results + " " + isEqual;
+//   }
+
+
+
+//ignore.... the below was before I decided to try a clickevent
+
+
+
+
+// var userInput = prompt("Tommy's bmi is higher than Jerry's... true or false?");
+// if (userInput === "True"){
+// var isEqual = false;
+// console.log("That's not true." + isEqual)
+// }
+// else if (userInput === "False") {
+// var isEqual = true;
+// console.log("lol, you're right!" + isEqual);
+// };
